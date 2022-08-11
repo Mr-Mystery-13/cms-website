@@ -1,0 +1,48 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+    <!-- @NOTE linking our CSS -->
+    <link rel="stylesheet" href="style.css"/>
+
+    <!-- @NOTE linking firebase version 8 CDNs first -->
+    <script defer src="https://www.gstatic.com/firebasejs/8.10.1/firebase-app.js"></script>
+    <script defer src="https://www.gstatic.com/firebasejs/8.10.1/firebase-database.js"></script>
+
+    <!-- @NOTE initializing firebase -->
+    <script defer src="init-firebase.js"></script>
+
+    <!-- @NOTE link our main.js AFTER we load initialize firebase -->
+    <script defer src="main.js"></script>
+
+    <title>Demo CMS</title>
+</head>
+<body>
+    <h1 id="main-title">CMS Site! (go to .../edit)</h1>
+    <section id="landing">
+            <!--
+                @NOTE notice the ids of each element correspond with their sister element
+                on the actual webpage. this is gonna allow for some creative code.
+
+                specifically, the title, desc, and img elements.
+            -->
+            <div id="img-container">
+                <img id="img" src="https://cdn.shopify.com/s/files/1/1061/1924/products/Clapping_Hands_Emoji_ios10_d7ab242e-7230-47bf-b1e2-d46a4bc51b5b_large.png?v=1571606090"/>
+            </div>        
+
+            <div id="text-container">
+                <h1 id="title">Ez</h1>
+
+                <hr id="divider"/>
+                
+                <h3 id="desc">Lorem ipsum dolor sit amet consectetur, adipisicing elit. Perferendis eius ex error necessitatibus exercitationem repellat praesentium quo cupiditate dolorem quas accusamus in impedit nisi, corporis consectetur non optio similique provident!</h3>
+                
+            </div>
+
+        </div>
+    </section>
+</body>
+</html>
