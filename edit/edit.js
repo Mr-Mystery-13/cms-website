@@ -10,7 +10,7 @@ let img = document.getElementById('img')
 
 document.getElementById('save-btn').onclick = (event) => {
 
-    if (pass.value === 'Edit: P128') {
+    if (pass.value === 'P128') {
 
         event.preventDefault();
 
